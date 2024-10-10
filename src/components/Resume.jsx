@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 function Resume() {
   return (
@@ -13,10 +13,9 @@ function Resume() {
         <li>兼松コミュニケーションズ株式会社 - 一般事務・OA事務</li>
         <li>有限会社日宝美装 - OA事務・経理補佐</li>
         <li>Crypto Technologies合同会社 - ジュニア開発者</li>
-
       </ul>
     </div>
-  );
+  )
 }
 
-export default Resume;
+export default Resume

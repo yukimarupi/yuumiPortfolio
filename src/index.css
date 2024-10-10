@@ -6,7 +6,7 @@
 }
 
 body {
-  padding: 20px;  /* ページ全体の周囲に余白を追加 */
+  padding: 20px; /* ページ全体の周囲に余白を追加 */
   font-family: 'Arial', sans-serif; /* デフォルトのフォント設定 */
   width: 100%; /* 画面幅全体 */
   display: flex; /* Flexboxを使った中央配置の基盤 */

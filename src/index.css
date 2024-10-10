@@ -1,13 +1,23 @@
-body {
+/* ベースのスタイルリセット */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  padding: 20px;  /* ページ全体の周囲に余白を追加 */
+  font-family: 'Arial', sans-serif; /* デフォルトのフォント設定 */
+  width: 100%; /* 画面幅全体 */
+  display: flex; /* Flexboxを使った中央配置の基盤 */
+  justify-content: center; /* 水平中央配置 */
+  align-items: center; /* 垂直中央配置 */
+  text-align: center; /* テキストの中央揃え */
+}
+
+/* 共通セクションのスタイリング */
+.section {
+  padding: 20px;
+  width: 80%; /* コンテンツの幅 */
+  margin: 0 auto; /* 上下マージンなしで左右マージン自動調整 */
 }

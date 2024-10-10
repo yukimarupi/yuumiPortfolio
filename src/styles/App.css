@@ -1,0 +1,62 @@
+/* ナビゲーションバー全体のスタイル */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  width: 100%;  /* ナビゲーションバーの幅を画面いっぱいに拡張 */
+}
+
+/* ナビゲーションリンクを含むリスト */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* 中央に配置 */
+  align-items: center; /* アイテムを垂直方向に中央揃え */
+  padding: 0;
+  margin: 0;
+  width: 100%; /* ulタグの幅をnavタグ全体に合わせる */
+}
+
+nav ul li {
+  margin: 0 15px; /* リンク間のマージンを設定 */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #4CAF50; /* ホバー時のテキスト色 */
+  background-color: #ffffff26; /* ホバー時の背景色 */
+}
+
+.active-link {
+  border-bottom: 3px solid #4CAF50; /* アクティブリンクのスタイル */
+}
+
+/* タイル型レイアウトの基本スタイル */
+.tile {
+  width: 30%;  /* タイルの幅 */
+  margin: 10px; /* タイル間のマージン */
+  background-color: #f5f5f5; /* タイルの背景色 */
+  padding: 20px; /* タイルのパディング */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 影を付ける */
+  transition: transform 0.3s; /* トランジションで動きをつける */
+}
+
+.tile:hover {
+  transform: translateY(-5px); /* ホバー時にタイルを少し浮かせる */
+}
+
+/* タイルのコンテナー */
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* コンテナー内のアイテムを均等に配置 */
+}
